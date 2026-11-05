@@ -1,0 +1,65 @@
+/* Menulinjemenu */
+"Start Tracking" = "Start tidsregistrering";
+"Stop Tracking" = "Stop tidsregistrering";
+"Today: %@" = "I dag: %@";
+"This week: %@" = "Denne uge: %@";
+"Last week: %@" = "Sidste uge: %@";
+"Edit Entries…" = "Rediger registreringer…";
+"Settings…" = "Indstillinger…";
+"Quit Tomato" = "Slut Tomato";
+"Tomato: %@ tracked today" = "Tomato: %@ registreret i dag";
+
+/* Vinduestitler */
+"Tomato Entries" = "Tomato-registreringer";
+"Tomato Settings" = "Tomato-indstillinger";
+
+/* Indstillinger */
+"Break reminders" = "Pausepåmindelser";
+"Remind after" = "Påmind efter";
+"%d min of work" = "%d min. arbejde";
+"Break length" = "Pauselængde";
+"%d min" = "%d min.";
+"Snooze" = "Udsæt";
+
+/* Registreringer */
+"No Entries" = "Ingen registreringer";
+"Start tracking from the menubar or add an entry manually." = "Start tidsregistrering fra menulinjen, eller tilføj en registrering manuelt.";
+"Add Entry" = "Tilføj registrering";
+"running" = "kører";
+"%@ – now" = "%@ – nu";
+"Today" = "I dag";
+"Yesterday" = "I går";
+
+/* Overførsel */
+"Carryover from last week" = "Overførsel fra sidste uge";
+"Added to the counter of the week starting %@. Leave empty for 0:00." = "Lægges til tælleren for ugen, der starter %@. Lad feltet stå tomt for 0:00.";
+"Hours" = "Timer";
+"1:30" = "1.30";
+"Enter hours as H:MM, e.g. 1:30 or -0:45." = "Angiv timer som T.MM, f.eks. 1.30 eller -0.45.";
+
+/* Redigering af registrering */
+"Edit Entry" = "Rediger registrering";
+"Start" = "Start";
+"End" = "Slut";
+"Set Time" = "Angiv tidspunkt";
+"End must not be before start." = "Sluttidspunktet må ikke ligge før starttidspunktet.";
+"Delete" = "Slet";
+"Cancel" = "Annuller";
+"Save" = "Gem";
+
+/* Pausepåmindelse */
+"Time for a break" = "Tid til en pause";
+"You've been working for %d minutes." = "Du har arbejdet i %d minutter.";
+"Snooze %d min" = "Udsæt %d min.";
+"Skip" = "Spring over";
+"Start Break (%d min)" = "Start pause (%d min.)";
+"Break's over" = "Pausen er slut";
+"Ready to get back to it?" = "Klar til at komme i gang igen?";
+"Dismiss" = "Luk";
+"Resume Tracking" = "Genoptag tidsregistrering";
+
+/* Glemt timer */
+"Still tracking?" = "Registrerer du stadig?";
+"This timer has been running since %@. If you forgot to stop it, set an end time." = "Denne timer har kørt siden %@. Hvis du glemte at stoppe den, kan du angive et sluttidspunkt.";
+"Keep Running" = "Lad den køre";
+"Stop at This Time" = "Stop på dette tidspunkt";

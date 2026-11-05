@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  tomato:
+    runs-on: macos-26
+    defaults:
+      run:
+        working-directory: Tomato
+    steps:
+      - uses: actions/checkout@v5
+      - run: swift --version
+      - name: Unit tests
+        run: make test
+      - name: Selftest
+        run: |
+          swift build
+          .build/debug/Tomato --selftest
+      - name: App bundle
+        run: |
+          make app
+          codesign --verify --deep --strict dist/Tomato.app
+          dist/Tomato.app/Contents/MacOS/Tomato --selftest
+
+  webcam-hook:
+    runs-on: macos-26
+    defaults:
+      run:
+        working-directory: webcam-hook
+    steps:
+      - uses: actions/checkout@v5
+      - run: swift --version
+      - name: Build
+        run: make build
+      - name: Embedded Info.plist
+        run: |
+          codesign --force --sign - --identifier me.arne.webcam-hook .build/release/webcam-hook
+          codesign --display --verbose=2 .build/release/webcam-hook 2>&1 | tee /dev/stderr \
+            | grep -q 'Identifier=me.arne.webcam-hook'
+          codesign --display --verbose=2 .build/release/webcam-hook 2>&1 | grep -q 'Info.plist entries=[1-9]'
+      - name: Usage
+        run: .build/release/webcam-hook --help
+

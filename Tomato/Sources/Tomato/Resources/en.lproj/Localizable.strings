@@ -1,0 +1,65 @@
+/* Menubar menu */
+"Start Tracking" = "Start Tracking";
+"Stop Tracking" = "Stop Tracking";
+"Today: %@" = "Today: %@";
+"This week: %@" = "This week: %@";
+"Last week: %@" = "Last week: %@";
+"Edit Entries…" = "Edit Entries…";
+"Settings…" = "Settings…";
+"Quit Tomato" = "Quit Tomato";
+"Tomato: %@ tracked today" = "Tomato: %@ tracked today";
+
+/* Window titles */
+"Tomato Entries" = "Tomato Entries";
+"Tomato Settings" = "Tomato Settings";
+
+/* Settings */
+"Break reminders" = "Break reminders";
+"Remind after" = "Remind after";
+"%d min of work" = "%d min of work";
+"Break length" = "Break length";
+"%d min" = "%d min";
+"Snooze" = "Snooze";
+
+/* Entries */
+"No Entries" = "No Entries";
+"Start tracking from the menubar or add an entry manually." = "Start tracking from the menubar or add an entry manually.";
+"Add Entry" = "Add Entry";
+"running" = "running";
+"%@ – now" = "%@ – now";
+"Today" = "Today";
+"Yesterday" = "Yesterday";
+
+/* Carryover row + sheet */
+"Carryover from last week" = "Carryover from last week";
+"Added to the counter of the week starting %@. Leave empty for 0:00." = "Added to the counter of the week starting %@. Leave empty for 0:00.";
+"Hours" = "Hours";
+"1:30" = "1:30";
+"Enter hours as H:MM, e.g. 1:30 or -0:45." = "Enter hours as H:MM, e.g. 1:30 or -0:45.";
+
+/* Entry edit sheet */
+"Edit Entry" = "Edit Entry";
+"Start" = "Start";
+"End" = "End";
+"Set Time" = "Set Time";
+"End must not be before start." = "End must not be before start.";
+"Delete" = "Delete";
+"Cancel" = "Cancel";
+"Save" = "Save";
+
+/* Break reminder panel */
+"Time for a break" = "Time for a break";
+"You've been working for %d minutes." = "You've been working for %d minutes.";
+"Snooze %d min" = "Snooze %d min";
+"Skip" = "Skip";
+"Start Break (%d min)" = "Start Break (%d min)";
+"Break's over" = "Break's over";
+"Ready to get back to it?" = "Ready to get back to it?";
+"Dismiss" = "Dismiss";
+"Resume Tracking" = "Resume Tracking";
+
+/* Stale timer panel */
+"Still tracking?" = "Still tracking?";
+"This timer has been running since %@. If you forgot to stop it, set an end time." = "This timer has been running since %@. If you forgot to stop it, set an end time.";
+"Keep Running" = "Keep Running";
+"Stop at This Time" = "Stop at This Time";
